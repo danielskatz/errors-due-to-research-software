@@ -28,7 +28,7 @@ Please feel free to make additions, keeping the lists in chronologic order (by y
 * Guidelines for human gene nomenclature, Elspeth A. Bruford, Bryony Braschi, Paul Denny, Tamsin E. M. Jones, Ruth L. Seal, and Susan Tweedie, Nature Genetics, 2020. https://doi.org/10.1038/s41588-020-0669-3
   + includes "symbols that affect data handling and retrieval, e.g. all symbols that auto-converted to dates in Microsoft Excel have been changed (SEPT1 is now SEPTIN1; MARCH1 is now MARCHF1 etc); tRNA synthetase symbols that were also common words have been changed (WARS is now WARS1, CARS is now CARS1, etc.)."
 * Microsoft Finally Fixes Excel Glitch That Caused Major Headaches for Scientists, Josh Hendrickson, PC Mag, 2023. https://www.pcmag.com/news/microsoft-finally-fixes-excel-glitch-that-caused-major-headaches-for-scientists
- + includes "Years after introducing Excel's automatic conversion features, Microsoft rolls out an update to prevent it from changing gene symbols to dates." 
+  + includes "Years after introducing Excel's automatic conversion features, Microsoft rolls out an update to prevent it from changing gene symbols to dates." 
  
 
 ## Papers / articles that collection multiple failure examples
