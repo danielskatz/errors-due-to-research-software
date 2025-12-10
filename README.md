@@ -26,6 +26,7 @@ Please feel free to make additions, keeping the lists in chronologic order (by y
 * Does high public debt consistently stifle economic growth? A critique of Reinhart and Rogoff, Thomas Herndon, Michael Ash and Robert Pollin, Cambridge Journal of Economics, 2014, https://doi.org/10.1093/cje/bet075
 * Gene name errors are widespread in the scientific literature, Ziemann M, Eren Y, and El-Osta A, Genome Biololgy, 2016. https://doi.org/10.1186/s13059-016-1044-7
 * Covid: how Excel may have caused loss of 16,000 test results in England, Alex Hern, The Guardian, 2020. https://www.theguardian.com/politics/2020/oct/05/how-excel-may-have-caused-loss-of-16000-covid-tests-in-england
+* Computational science: ...Error, Zeeya Merali, Nature, 2010, https://doi.org/10.1038/467775a
 * Guidelines for human gene nomenclature, Elspeth A. Bruford, Bryony Braschi, Paul Denny, Tamsin E. M. Jones, Ruth L. Seal, and Susan Tweedie, Nature Genetics, 2020. https://doi.org/10.1038/s41588-020-0669-3
   + includes "symbols that affect data handling and retrieval, e.g. all symbols that auto-converted to dates in Microsoft Excel have been changed (SEPT1 is now SEPTIN1; MARCH1 is now MARCHF1 etc); tRNA synthetase symbols that were also common words have been changed (WARS is now WARS1, CARS is now CARS1, etc.)."
 * Microsoft Finally Fixes Excel Glitch That Caused Major Headaches for Scientists, Josh Hendrickson, PC Mag, 2023. https://www.pcmag.com/news/microsoft-finally-fixes-excel-glitch-that-caused-major-headaches-for-scientists
