@@ -23,7 +23,7 @@ Please feel free to make additions, keeping the lists in chronologic order (by y
 * _Retracted_: Prediction of posttranslational modification sites from sequences with kernel methods, Xiaobo Wang, Yongcui Wang, Yingjie Tian, Xiaojian Shao, Ling-Yun Wu, and Naiyang Deng, Wiley Periodicals, 2010. https://doi.org/10.1002/jcc.21526
   + "retracted by agreement between the authors, the journal's editors, and Wiley ... because a computational error produced results that led the authors to overstate the level of performance of their computing model."
 * Retraction Note: Limited individual attention and online virality of low-quality information by Qiu, Oliveira, Shirazi, Flammini, and Filippo Menczer in _Nature Human Behavior_ in 2019.
-  + > In Fig. 4d, a software bug led to an incorrect value of the discriminative power represented by the blue bar. The correct value is τ = 0.17, as opposed to the value τ = 0.15 reported in the Letter.
+  + "a software bug led to an incorrect value"
     >
     > In Fig. 5, the model plot was produced with erroneous data. [Why was the data erroneous? Was this related to the aforementioned software bug?]
 * Cluster failure: Why fMRI inferences for spatial extent have inflated false-positive rates, Anders Eklunda, Thomas E. Nichols, and Hans Knutssona, Proceedings of the National Academy of Sciences, 2016. https://doi.org/10.1073/pnas.1602413113
