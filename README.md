@@ -35,6 +35,7 @@ Please feel free to make additions, keeping the lists in chronologic order (by y
 
 * Bits and Bugs: A Scientific and Historical Review on Software Failures in Computational Science, Thomas Huckle and Tobias Neckel, SIAM, 2019. https://doi.org/10.1137/1.9781611975567
 * EuSPRIG Spreadsheet Horror Stories, European Spreadsheet Productivity & Risks Interest Group. https://eusprig.org/research-info/horror-stories/
+* Heroic Bug Fixes – Snow Grain Size, E3SM Energy Exascale Earth System Model. https://e3sm.org/heroic-bug-fixes-snow-grain-size/
 
 ## About this repository
 
