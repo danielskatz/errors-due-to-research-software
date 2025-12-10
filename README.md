@@ -12,7 +12,6 @@ Please feel free to make additions, keeping the lists in chronologic order (by y
 * The Effects of FreeSurfer Version, Workstation Type, and Macintosh Operating System Version on Anatomical Volume and Cortical Thickness Measurements, Ed H. B. M. Gronenschild, Petra Habets, Heidi I. L. Jacobs, Ron Mengelers, Nico Rozendaal, Jim van Os, and Machteld Marcelis, PLOS One, 2012. https://doi.org/10.1371/journal.pone.0038234
 * BLOSUM62 miscalculations improve search performance, Mark P Styczynski, Kyle L Jensen, Isidore Rigoutsos, and Gregory Stephanopoulos, Nature Biotechnology, 2008. https://doi.org/10.1038/nbt0308-274
 * Retraction: Inferring the Effects of Cancer Treatment: Divergent Results From Early Breast Cancer Trialists’ Collaborative Group Meta-Analyses of Randomized Trials and Observational Data From SEER Registries, Katherine E. Henson, Reshma Jagsi, David Cutter, Paul McGale, Carolyn Taylor, and Sarah C. Darby, Journal of Clinical Oncology, 2016. https://doi.org/10.1200/jco.2016.69.0875
-* Does high public debt consistently stifle economic growth? A critique of Reinhart and Rogoff, Thomas Herndon, Michael Ash and Robert Pollin, Cambridge Journal of Economics, 2014, https://doi.org/10.1093/cje/bet075
 * Retraction: How birds outperform humans in multi-component behavior, Sara Letzner, Onur Güntürkün, and Christian Beste, Current Biology Magazine, 2017. https://doi.org/10.1016/j.cub.2017.07.056
 * The war over supercooled water, Ashley G. Smart, Physics Today, 2018, https://doi.org/10.1063/PT.6.1.20180822a
   + This story is announced as a "hidden coding error", but a careful reading shows that it was really a case of an unjustified assumption, which hadn't been written down anywhere else but in the code.
@@ -24,6 +23,7 @@ Please feel free to make additions, keeping the lists in chronologic order (by y
 ## Papers / articles related to general software as used in research (eg, Excel-related errors)
 
 * Mistaken identifiers: gene name errors can be introduced inadvertently when using Excel in bioinformatics, Zeeberg BR, Riss J, Kane DW, Bussey KJ, Uchio E, Linehan WM, Barrett JC, and Weinstein JN, BMC Bioinformatics. 2004. https://doi.org/10.1186/1471-2105-5-80
+* Does high public debt consistently stifle economic growth? A critique of Reinhart and Rogoff, Thomas Herndon, Michael Ash and Robert Pollin, Cambridge Journal of Economics, 2014, https://doi.org/10.1093/cje/bet075
 * Gene name errors are widespread in the scientific literature, Ziemann M, Eren Y, and El-Osta A, Genome Biololgy, 2016. https://doi.org/10.1186/s13059-016-1044-7
 * Covid: how Excel may have caused loss of 16,000 test results in England, Alex Hern, The Guardian, 2020. https://www.theguardian.com/politics/2020/oct/05/how-excel-may-have-caused-loss-of-16000-covid-tests-in-england
 * Guidelines for human gene nomenclature, Elspeth A. Bruford, Bryony Braschi, Paul Denny, Tamsin E. M. Jones, Ruth L. Seal, and Susan Tweedie, Nature Genetics, 2020. https://doi.org/10.1038/s41588-020-0669-3
