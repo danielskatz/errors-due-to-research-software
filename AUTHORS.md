@@ -6,3 +6,4 @@
 * Johan van der Knijff, [@bitsgalore](https://github.com/bitsgalore), https://orcid.org/0000-0003-3686-337X
 * Samuel Grayson, [@charmoniumQ](https://github.com/charmoniumQ), https://orcid.org/0000-0001-5411-356X
 * Konrad Hinsen, [@khinsen](https://github.com/khinsen), https://orcid.org/0000-0003-0330-9428
+* Neil Shephard, [@ns-rse](https://github.com/ns-rse), https://orcid.org/0000-0001-8301-6857
