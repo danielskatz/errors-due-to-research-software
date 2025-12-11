@@ -7,3 +7,4 @@
 * Samuel Grayson, [@charmoniumQ](https://github.com/charmoniumQ), https://orcid.org/0000-0001-5411-356X
 * Konrad Hinsen, [@khinsen](https://github.com/khinsen), https://orcid.org/0000-0003-0330-9428
 * Mark Ziemann, [@markziemann](https://github.com/markziemann), https://orcid.org/0000-0002-7688-6974
+* Neil Shephard, [@ns-rse](https://github.com/ns-rse), https://orcid.org/0000-0001-8301-6857

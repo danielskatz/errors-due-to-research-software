@@ -1,0 +1,65 @@
+#!/bin/bash
+#
+# Get a BibTeX citation from a DOI
+set -e
+set -o pipefail
+
+usage()
+{
+  echo "usage : doi2bibtex [ -d DOI ] [ -f FILE ]"
+  echo ""
+  echo "A simple Bash script to take a single DOI or a list of DOIs from a file"
+  echo "and use cURL to fetch the BibTeX citation for the given DOI(s)."
+  echo ""
+  echo "If no DOI or file is provided the adjacent README.md is parsed for DOIs"
+  echo "using cat/grep/awk. Note that the URL for the DOI MUST be the last"
+  echo "element of the row and separated by a space from the previous word."
+}
+
+
+while getopts "d:f:?h" option
+do
+    case $option in
+	d)
+	    DOI=${OPTARG};;
+	f)
+	    FILE=${OPTARG};;
+	h|?)
+            usage
+            exit 0;;
+    esac
+done
+
+DOI_FILE=()
+
+if [ "${FILE}" ]; then
+  while IFS= read -r LINE; do
+    DOI_FILE+=("${LINE}")
+  done < "${FILE}"
+fi
+
+if [ "${DOI}" ]; then
+  DOI_FILE+=("${DOI}")
+fi
+
+if [ -p /dev/sdtin ]; then
+  while IFS= read -r LINE; do
+    DOI_FILE+=("${LINE}")
+  done
+fi
+
+if [ -z "${FILE}" ] && [ -z "${DOI}" ]; then
+  mapfile -t DOI_FILE < <(grep "^\*" README.md | grep "doi" | awk '{print $NF}')
+fi
+
+_fetch()
+{
+  DOI=${1}
+  # echo "${DOI}"
+  curl -LH "Accept: text/bibliography; style=bibtex" ${DOI}
+}
+
+
+for doi in "${DOI_FILE[@]}"; do
+  _fetch ${doi}
+done

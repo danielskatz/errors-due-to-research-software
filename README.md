@@ -1,4 +1,5 @@
 # Errors due to research software
+
 This repo is a list of papers and articles that discuss errors in research due to software errors.
 
 Please feel free to make additions, **keeping the lists in chronologic order (by year)**, and formatting entries similarly to exisiting ones (title, author, publisher, year. DOI/URL). If you want to add a comment as well, feel free, but please indent it as shown in "A Scientist's Nightmare" entry.  See the [contributing guidelines](https://github.com/danielskatz/errors-due-to-research-software/edit/main/README.md#contributing) below.
@@ -31,7 +32,7 @@ Please feel free to make additions, **keeping the lists in chronologic order (by
 
 * Mistaken identifiers: gene name errors can be introduced inadvertently when using Excel in bioinformatics, Zeeberg BR, Riss J, Kane DW, Bussey KJ, Uchio E, Linehan WM, Barrett JC, and Weinstein JN, BMC Bioinformatics. 2004. https://doi.org/10.1186/1471-2105-5-80
 * Does high public debt consistently stifle economic growth? A critique of Reinhart and Rogoff, Thomas Herndon, Michael Ash and Robert Pollin, Cambridge Journal of Economics, 2014, https://doi.org/10.1093/cje/bet075
-  + "RR [Reinhart and Rogoff] calculated both means and medians of cells in lines 30–44 instead of lines 30–49. In their analysis with the 1790–2009 dataset, RR calculated both means and medians for cells in lines 5–19 instead of lines 5–24. As such, Australia, Austria, Belgium, Canada and Denmark were excluded entirely from their calculations with both the 1946–2009 and 1790–2009 data samples. Reinhart and Rogoff acknowledge the error in a [New York Times column](https://archive.nytimes.com/www.nytimes.com/interactive/2013/04/17/business/17economix-response.html), while maintaining the validity of their conclusion. 
+  + "RR [Reinhart and Rogoff] calculated both means and medians of cells in lines 30–44 instead of lines 30–49. In their analysis with the 1790–2009 dataset, RR calculated both means and medians for cells in lines 5–19 instead of lines 5–24. As such, Australia, Austria, Belgium, Canada and Denmark were excluded entirely from their calculations with both the 1946–2009 and 1790–2009 data samples. Reinhart and Rogoff acknowledge the error in a [New York Times column](https://archive.nytimes.com/www.nytimes.com/interactive/2013/04/17/business/17economix-response.html), while maintaining the validity of their conclusion.
   + The paper Growth in a Time of Debt by Reinhart and Rogoff, as an NBER working paper, last revised in Dec 2011 <https://doi.org/10.3386/w15639>, was cited as a motivation for public policy changes by American, EU, and British politicians, so this error may have had an outsized impact.
 * Gene name errors are widespread in the scientific literature, Ziemann M, Eren Y, and El-Osta A, Genome Biololgy, 2016. https://doi.org/10.1186/s13059-016-1044-7
 * A journey of reproducibility from Excel to Pandas, Simon Hettrick, Software Sustainability Institute's blog, 2017. https://www.software.ac.uk/blog/journey-reproducibility-excel-pandas
@@ -41,9 +42,9 @@ Please feel free to make additions, **keeping the lists in chronologic order (by
 * Guidelines for human gene nomenclature, Elspeth A. Bruford, Bryony Braschi, Paul Denny, Tamsin E. M. Jones, Ruth L. Seal, and Susan Tweedie, Nature Genetics, 2020. https://doi.org/10.1038/s41588-020-0669-3
   + includes "symbols that affect data handling and retrieval, e.g. all symbols that auto-converted to dates in Microsoft Excel have been changed (SEPT1 is now SEPTIN1; MARCH1 is now MARCHF1 etc); tRNA synthetase symbols that were also common words have been changed (WARS is now WARS1, CARS is now CARS1, etc.)."
 * Microsoft Finally Fixes Excel Glitch That Caused Major Headaches for Scientists, Josh Hendrickson, PC Mag, 2023. https://www.pcmag.com/news/microsoft-finally-fixes-excel-glitch-that-caused-major-headaches-for-scientists
-  + includes "Years after introducing Excel's automatic conversion features, Microsoft rolls out an update to prevent it from changing gene symbols to dates." 
+  + includes "Years after introducing Excel's automatic conversion features, Microsoft rolls out an update to prevent it from changing gene symbols to dates."
 
-## Papers / articles that collection multiple failure examples
+## Papers / articles that collect multiple failure examples
 
 * Computational science: ...Error, Zeeya Merali, Nature, 2010, https://doi.org/10.1038/467775a
 * Bits and Bugs: A Scientific and Historical Review on Software Failures in Computational Science, Thomas Huckle and Tobias Neckel, SIAM, 2019. https://doi.org/10.1137/1.9781611975567
@@ -63,7 +64,7 @@ Contributions to this project are released to the public under the [project's op
 
 ### Authors and credit
 
-If you contribute to this work, such as by a pull request (PR), please also add yourself to the [AUTHORS.md](./AUTHORS.md) file in the same PR, ideally with your real name, your GitHub username, and your [ORCID](https://orcid.org)
+If you contribute to this work, such as by a pull request (PR), please also add yourself to the [`AUTHORS.md`](./AUTHORS.md) file in the same PR, ideally with your real name, your GitHub username, and your [ORCID](https://orcid.org)
 
 If you use this work, please credit/cite it and the [authors](./AUTHORS.md).
 
@@ -72,6 +73,33 @@ If you use this work, please credit/cite it and the [authors](./AUTHORS.md).
 1. [Fork](https://github.com/danielskatz/errors-due-to-research-software/fork) and clone the repository
 2. Create a new branch: `git checkout -b my-branch-name`
 3. Make your change
-4. Optionally add yourself to the AUTHORS.md file
+4. Optionally add yourself to the `AUTHORS.md` file
 5. Push to your fork and [submit a pull request](https://github.com/danielskatz/errors-due-to-research-software/compare)
 6. Pat yourself on the back and wait for your pull request to be reviewed and merged.
+
+### BibTeX File
+
+A [BibTeX][bibtex] files of citation that have [DOIs][doi] is included in this repository, see `references.bib`. It is
+currently manually generated using the included [Bash][bash] script `doi2bibtex` which can parse the `README.md`.
+
+If you are adding an entry to this `README.md` note the formatting suggested at the start of this `README.md` and please
+try and use the URL format for the [DOI][doi] (prepend the DOI with `https://doi.org/`
+e.g. `https://doi.org/10.1186/1471-2105-5-80`). You can then regenerate `references.bib` using the following.
+
+``` shell
+./doi2bibtex > references.bib
+```
+
+See `doi2bibtex -h` for help on usage. Remember to include the changes to `references.bib` in your commit.
+
+This script uses the following free software.
+
+- [gawk][gawk]
+- [Bash][bash]
+- [cURL][curl]
+
+[gawk]: https://www.gnu.org/software/gawk/
+[bash]: https://www.gnu.org/software/bash/
+[bibtex]: https://www.ctan.org/pkg/bibtex
+[curl]: https://curl.se
+[doi]: https://www.doi.org/
