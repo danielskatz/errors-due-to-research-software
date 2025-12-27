@@ -1,0 +1,48 @@
+name: Update BibTeX references
+
+on:
+  pull_request:
+    types:
+      - opened
+      - ready_for_review
+      - reopened
+      - synchronize
+    paths:
+      - "README.md"
+
+jobs:
+  update-references:
+    name: Update references.bib
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+      - name: Convert doi to bibtex
+        run:
+          ./doi2bibtex > references.bib
+      - name: Check for changes
+        id: check_changes
+        run: |
+          if [[ -n "$(git diff --exit-code)" ]]; then
+            echo "Changes detected."
+            echo "::set-output name=has_changes::true"
+          else
+            echo "No changes detected."
+            echo "::set-output name=has_changes::false"
+          fi
+      - name: Commit and push changes
+        if: steps.check_changes.outputs.has_changes == 'true'
+        run: |
+          # configure user
+          git config --global user.name "${{ github.actor }}"
+          git config --global user.email "${{ github.actor }}@users.noreply.github.com"
+
+          # stage any file changes to be committed
+          git add -u .
+
+          # make commit with staged changes
+          git commit -m 'update: DOI changes to README.md, references.bib updated'
+
+          # push the commit back up to source GitHub repository
+          git push

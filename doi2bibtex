@@ -55,8 +55,8 @@ fi
 _fetch()
 {
   DOI=${1}
-  # echo "${DOI}"
-  curl -LH "Accept: text/bibliography; style=bibtex" ${DOI}
+  # Pipe through grep so that only valid references are output, we capture non-matches (when grep returns 1)
+  curl --silent -LH "Accept: text/bibliography; style=bibtex" ${DOI} | { grep "^ @" || test $? = 1; }
 }
 
 
